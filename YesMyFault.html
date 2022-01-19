@@ -92,11 +92,11 @@ function bsodset() {
     bsline5.innerHTML=bsli5.value
     bsline6.innerHTML=bsli6.value 
     bsline7.innerHTML=bsli7.value
-    if (qrm.checked=="checked") {
-confirm(qrm)
+    if (qrm.checked) {
+	qr.style.display="block";
     }    
-    else if (qrm.checked=="") {
-    	qr.style.display="block";
+    else{
+	qr.style.display="none";
     }
 }
 function show() {
